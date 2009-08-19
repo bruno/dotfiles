@@ -5,8 +5,15 @@ else
 fi
 
 export EDITOR='mate -w'
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+PATH="/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/libexec/git-core:$PATH"
+export MANPATH="/usr/local/man:/usr/local/mysql/man:$MANPATH"
+# -- start rip config -- #
+RIPDIR=/Users/bruno/.rip
+RUBYLIB="$RUBYLIB:$RIPDIR/active/lib"
+PATH="$PATH:$RIPDIR/active/bin"
+export RIPDIR RUBYLIB PATH
+# -- end rip config -- #
+
 
 fpath=(~/.zsh/functions $fpath)
 
