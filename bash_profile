@@ -7,6 +7,10 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+if [ -f ~/.localrc ]; then
+  . ~/.localrc
+fi
+
 # -- start rip config -- #
 RIPDIR=/Users/bruno/.rip
 RUBYLIB="$RUBYLIB:$RIPDIR/active/lib"
