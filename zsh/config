@@ -4,7 +4,6 @@ else
   export PS1='%3~$(git_info_for_prompt)%# '
 fi
 
-<<<<<<< HEAD
 export EDITOR='mate -w'
 PATH="/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/libexec/git-core:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:$MANPATH"
@@ -14,12 +13,6 @@ RUBYLIB="$RUBYLIB:$RIPDIR/active/lib"
 PATH="$PATH:$RIPDIR/active/bin"
 export RIPDIR RUBYLIB PATH
 # -- end rip config -- #
-
-=======
-export EDITOR='mate_wait'
-export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
->>>>>>> upstream/master
 
 fpath=(~/.zsh/functions $fpath)
 
