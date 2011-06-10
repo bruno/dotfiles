@@ -5,7 +5,7 @@ else
 fi
 
 export EDITOR='mate -w'
-PATH="/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/libexec/git-core:$PATH"
+PATH="/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/usr/local/libexec/git-core:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:$MANPATH"
 # -- start rip config -- #
 RIPDIR=/Users/bruno/.rip
